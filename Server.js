@@ -49,6 +49,8 @@ transporter.sendMail(mailOptions, (err, data) => {
     else{
         console.log('Email sent!!!');
     }
+
+    res.redirect('/');
   
 });
 
