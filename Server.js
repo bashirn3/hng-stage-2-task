@@ -55,6 +55,6 @@ transporter.sendMail(mailOptions, (err, data) => {
 // transporter.verify().then(console.log).catch(console.error);
 })
 
-app.listen(3009, ()=>{
-    console.log('app working on port 3009')
+app.listen(process.env.PORT || 3009, ()=>{
+    console.log(`app working on port ${process.env.PORT}`)
 });
